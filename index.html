@@ -1,189 +1,69 @@
-<html>
-    <head>
-        <script src="https://kit.fontawesome.com/6f8abaa287.js" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>o0.rip</title>
-        <meta name="description" content="o_0">
-        <link rel="icon" href="logo.png">
-    </head>
-    <center>
-</center>
-    <body>
-    <a onclick="enterportal()"id="enter-portal">Enter</a>
-    <div id="body-div">
-        <div style="width:95%;">
-            <div class="socials-div">
-                <a href="https://www.instagram.com/rczxy" target="_blank"><i  class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@lykeray" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="https://discord.dog/412341580700057620" target="_blank"><i class="fab fa-discord"></i></a>
-            </div>
-        </div>
-        <div class="socials-div-mobile">
-            <a href="https://www.instagram.com/rczxy" target="_blank"><i  class="fab fa-instagram"></i></a>
-            <br>
-            <a href="https://www.tiktok.com/@lykeray" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <br>
-            <a href="https://discord.dog/412341580700057620" target="_blank"><i class="fab fa-discord"></i></a>
-            <br>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="o_0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o0.rip</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/TMP0Mg9/logo-1.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-            <br>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://img.freepik.com/premium-photo/man-from-black-white_727765-517.jpg?w=1380" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://img.freepik.com/premium-photo/man-from-black-white_727765-517.jpg?w=1380" target="_blank">
+            <img src="https://img.freepik.com/premium-photo/man-from-black-white_727765-517.jpg?w=1380" alt="Profile Picture">
+          </a>
         </div>
+        <div class="popup-quote">
+          the blockchain runs through my veins.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
     </div>
+
+    <div id="userName">
+      @blockchain
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://discord.dog/412341580700057620" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>Discord
+      </a>
+      <a class="link" href="https://www.instagram.com/rczxy" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://snapchat.com/@raystuf" target="_blank">
+        <i class="fab fa-snapchat">&nbsp;</i>Snapchat
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #ChaseMoneyNotBitches💲
+    </div>
+
     <script>
-        function enterportal(){
-            var audio = new Audio('audio.mp3');
-            audio.play();
-            document.getElementById('body-div').style.display = "inline-block"
-            document.getElementById('enter-portal').style.display = "none";
-        }
-    </script>
-    </body>
-    <style>
-        *{
-            font-family:monospace
-        }
-        #quote{
-            color: rgb(0, 0, 0);
-            opacity: 50%;
-            animation-name: fade1;
-            animation-duration: 50s;
-    
-        }
+          var audio = new Audio('audio.mp3');
+          audio.play();
+  </script>
 
-        body{
-            background: rgb(88, 87, 87);
-        }
-        #body-div{
-            display: none;
-            animation-name: fade;
-            animation-duration: 4s;
-        }
-
-        .ray{
-            color: aliceblue;
-            position: absolute;
-            margin-top: 350px;
-            margin-bottom: 1000px;
-            margin-left: 985px;
-            margin-left: 1000x;
-        }
-
-        #enter-portal{
-            color:rgb(8, 8, 8);
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-decoration: none;
-            text-shadow: 0px 0px 10px rgb(0, 0, 0);
-            display: inline-block;
-            font-size: 20px;
-
-        }
-        #enter-portal:hover{
-            cursor: pointer;
-        }
-        #background-video {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-        .socials-div{
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; 
-            z-index: 2;
-            background: transparent;
-            box-shadow: 0px 0px 10px 10px black;
-            padding: 20px;
-            border-radius: 15px;
-            background: rgba(0, 0, 0, 0.8);
-            animation: bordercolor infinite;
-            animation-duration: 10s;
-        }
-        .socials-div-mobile{
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -10%);
-            text-align: center;
-            z-index: 2;
-            padding: 10px;
-            display: none;
-            background: transparent;
-            box-shadow: 0px 0px 10px 10px black;
-            border-radius: 15px;
-            background: rgba(0, 0, 0, 0.8);
-            animation: bordercolor infinite;
-            animation-duration: 10s;
-            
-        }
-        a{
-            color:white;
-            font-size: 60px;
-            margin-left: 20px;
-            transition: ease-out .01s;
-            z-index: 2;
-            background: transparent;
-        }
-        i{
-            animation: iconcolor infinite forwards;
-            animation-duration: 10s;
-        }
-        img{
-            animation: iconcolor infinite forwards;
-            animation-duration: 10s;
-        }
-        i:hover{
-            transform: scale(1.07);
-            transition: ease-in .01s;
-            cursor: pointer;
-        }
-        img:hover{
-            transform: scale(1.07);
-            transition: ease-in .01s;
-            cursor: pointer;
-        @keyframes fade{
-            0% {opacity: 0%;}
-            100% {opacity: 100%;}
-        }
-        @keyframes fade1{
-            0% {opacity: 0%;}
-            50% {opacity: 50%;}
-        }
-        
-        @media (min-width: 100px) and (max-width: 924px) {
-        #background-video{
-            display: none;
-        }
-        body{
-            background: rgb(94, 92, 92);
-        }
-        .socials-div-mobile{
-            display: inline-block;
-            box-shadow: 0px 0px 10px 10px #0a0a0a;
-        }
-        i{
-            margin-bottom: 20px;
-            text-shadow: 0px 0px 10px rgb(0, 0, 0);
-            animation: iconcolor infinite forwards;
-            animation-duration: 10s;
-        }
-        .socials-div{
-            display: none;
-        }
-        a{
-            margin-left: 0px;
-        }
-        
-        }
-    </style>
+  </body>
 </html>
